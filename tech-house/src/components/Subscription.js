@@ -2,16 +2,16 @@ import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 
 function Subscription() {
-  const [subscribe, setSubscribe] = useState(false);
-
+  const [available, setAvailable] = useState(false);
+  
   const handleClick = () => {
-    setSubscribe(subscribe => !subscribe);
+    setAvailable(subscribe => !available);
   }
   return (
     <>
-       { subscribe ? (<Button variant='danger' onClick={handleClick}>Subscribe</Button>)
+       { available ? (<Button variant='danger' onClick={handleClick}>Available</Button>)
         : 
-        (<Button variant='secondary' onClick={handleClick}>Subscribed</Button>)}
+        (<Button variant='secondary' onClick={handleClick}>Sold Out</Button>)}
     </>
   )
 }
