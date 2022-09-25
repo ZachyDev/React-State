@@ -1,12 +1,11 @@
 import './App.css';
-// import Subscription from './components/Subscription';
-import Foods from './components/Foods';
+import Signup from './components/Signup';
 function App() {
   return (
     <div className="App">
       <h1>React State</h1>
-      <Foods />
-    </div>
+      <Signup />
+    </div>  
   );
 }
 
